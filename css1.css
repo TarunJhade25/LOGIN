@@ -52,7 +52,7 @@ body {
 
 .design .pill-1 {
     bottom: 0;
-    left: -40px;
+    left: -70px;
     position: absolute;
     width: 80px;
     height: 200px;
@@ -73,7 +73,7 @@ body {
 
 .design .pill-3 {
     top: -100px;
-    left: 160px;
+    left: 150px;
     position: absolute;
     height: 200px;
     width: 100px;
