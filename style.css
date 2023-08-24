@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar button {
+    background: none;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 5px;
+    border: solid #704FC9 3px;
+    transition: 0.8s;
+}
+
+.navbar button:hover{
+    color: #704FC9;
+}
+
+.navbar button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index:-1;
+    top: 0;
+    border-radius: 5px 5px 50% 50%;
+    transition: 0.8s;
+}
+
+.navbar button:hover::before{
+    height: 100%;
+}
+
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+
+}
+
+.aboutsection{
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-bottom: 7%;
+}
+
+.intro{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    font-size: 25px;
+
+}
+
+.container{
+    background: url('34693954_711.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+    padding-bottom: 7%;
+}
+
+.container h2{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 1%;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.container h1::after{
+    content: '';
+    background: pink;
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.services{
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.services i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:  white;
+}
+
+.services h2{
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.services:hover{
+    background: white;
+    
+    transform: scale(1.05);
+}
+
+.services:hover i{
+    color: #704FC9;
+}
+
+.services:hover h2{
+    color: black;
+}
+
+.aboutcontainer{
+    background: url('aboutbg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+    padding-bottom: 7%;
+}
+
+.aboutcontainer h1{
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.aboutcontainer h1::after{
+    content: '';
+    background: pink;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aboutcontainer p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contactus{
+    background: url('contactus.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0 4%;
+    padding-bottom: 7%;
+}
+
+.contactus h1{
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contactus p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contactus h1::after{
+    content: '';
+    background: pink;
+    width: 180px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer{
+    background: rgba(0, 0, 0, .5);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
