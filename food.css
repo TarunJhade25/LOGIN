@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    margin:0px;
+    padding: 30px;
+    top: 0px;
+    justify-content: space-between;
+    z-index: 100;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.container {
+    background: url('34693954_711.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 0 4%;
+    padding-bottom: 7%;
+}
+
+.container h2 {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 1%;
+}
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.services {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.services i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.services h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.services:hover {
+    background: white;
+
+    transform: scale(1.05);
+}
+
+.services:hover i {
+    color: #704FC9;
+}
+
+.services:hover h2 {
+    color: black;
+}
+
+
+
+
+
+ 
