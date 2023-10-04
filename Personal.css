@@ -20,14 +20,16 @@ body {
     height: 100px;
     background-color: #2d1375;
 }
-.header h2{
+
+.header h2 {
     color: white;
     font-weight: 700;
 }
+
 #searchbar {
     display: flex;
     align-items: center;
-    color: white;       
+    color: white;
 }
 
 #searchbar input[type="text"] {
@@ -92,29 +94,23 @@ body {
     color: black;
 }
 
+
+
 @media screen and (min-width: 600px) {
     .row {
         grid-template-columns: repeat(2, 1fr);
         /* Display two services in one row on larger screens */
     }
 }
-
 @media screen and (min-width: 900px) {
     .row {
         grid-template-columns: repeat(3, 1fr);
         /* Display three services in one row on larger screens */
     }
 }
-
 @media screen and (min-width: 1210px) {
     .row {
         grid-template-columns: repeat(4, 1fr);
         /* Display three services in one row on larger screens */
     }
 }
-
-
-
-
-
- 

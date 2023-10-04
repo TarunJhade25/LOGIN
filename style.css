@@ -83,7 +83,7 @@ body{
 
 
 .navbar a::before {
-    content: '';
+    content:'';
     position: absolute;
     top: 100%;
     left: 0;
@@ -162,8 +162,9 @@ body{
     cursor: pointer;
     background: transparent;
     transition: transform 0.5s, background 0.5s;
+    
 }
-
+ 
 .services i{
     font-size: 40px;
     margin-bottom: 10px;
